@@ -1,58 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/register.css">
     <title>Register Page</title>
+
 </head>
 
 <body>
+
+    <h1 style="text-align: center;">"Join the Team, Register Today!"</h1>
     <div class="container">
-        <form id="registerForm" action="../action/register_action.php" method="post" onsubmit="return validateForm()">
-            <h1>Sign Up To StaffSync</h1>
+        <form id="registerForm" action="../action/registerEmployee_action.php" method="post" onsubmit="return validateForm()">
+            <div class="row">
+                <div class="col-50">
+                    <!-- firstname -->
+                    <label for="first-name"><i class="fa fa-user"></i> First Name</label>
+                    <input type="text" id="first-name" name="firstName" placeholder="Ewurama" required>
+                    <!-- lastname -->
+                    <label for="last-name"><i class="fa fa-user"></i> Last Name</label>
+                    <input type="text" id="last-name" name="lastName" placeholder="Boateng-Yeboah" required>
+                    <!-- Address -->
+                    <label for="address"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="address" name="address" placeholder="South Street 35" required>
+                    <!-- department -->
+                    <label for="department"><i class="fa fa-briefcase"></i> Department</label>
+                    <input type="text" id="department" name="department" placeholder="HR" required>
+                </div>
+                <div class="col-50">
+                    <!-- age -->
+                    <label for="age"><i class="fa fa-calendar"></i> Age</label>
+                    <input type="number" id="age" name="age" placeholder="30" required>
+                    <!-- phone -->
+                    <label for="phone"><i class="fa fa-phone"></i> Phone</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0595741421" required>
+                    <!-- date of birth -->
+                    <label for="date-of-birth"><i class="fa fa-calendar"></i> Date of Birth</label>
+                    <input type="date" id="date-of-birth" name="dob" required>
+                    <!-- email -->
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="email" id="email" name="email" placeholder="ewurama@example.com" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address">
+                    <!-- password -->
+                    <label for="password"><i class="fa fa-lock"></i> Password</label>
+                    <input type="password" id="password" name="password" placeholder="********" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                    <!-- confirm password -->
+                    <label for="confirmPassword"><i class="fa fa-lock"></i> Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 
-            <div class="form-group">
-                <label for="firstName">First Name:</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                </div>
             </div>
-
-            <div class="form-group">
-                <label for="lastName">Last Name:</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
-            </div>
-            <div class="form-group">
-                <label for="doe">Date of Employment:</label>
-                <input type="date" id="doe" name="doe" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address">
-            </div>
-
-            <div class="form-group">
-                <label for="dob">Date of Birth:</label>
-                <input type="date" id="dob" name="dob" required>
-            </div>
-
-
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="pwd" name="password" placeholder="Enter password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-            </div>
-
-            <div class=" form-group">
-                <label for="confirmPassword">Confirm Password:</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
-            </div>
-
-            <button type="submit" name="regform">Submit</button>
+            <input type="submit" value="Submit" name=submit class="btn">
         </form>
         <div id="message">
             <h3>Password must contain the following:</h3>
@@ -64,25 +62,24 @@
         <p class="login-link">Already have an account? <a href="../login/login.php">Login</a></p>
     </div>
 
-
     <script>
-        var myInput = document.getElementById("pwd");
+        var myInput = document.getElementById("password");
         var letter = document.getElementById("letter");
         var capital = document.getElementById("capital");
         var number = document.getElementById("number");
         var length = document.getElementById("length");
 
-        // When the user clicks on the password field, show the message box
+        // show the message box
         myInput.onfocus = function() {
             document.getElementById("message").style.display = "block";
         }
 
-        // When the user clicks outside of the password field, hide the message box
+        // hide the message box
         myInput.onblur = function() {
             document.getElementById("message").style.display = "none";
         }
 
-        // When the user starts to type something inside the password field
+        
         myInput.onkeyup = function() {
             // Validate lowercase letters
             var lowerCaseLetters = /[a-z]/g;
@@ -124,6 +121,8 @@
             }
         }
     </script>
+
+
 </body>
 
 </html>

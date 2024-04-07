@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <link rel="stylesheet" href="../css/login.css">
-    <title>FitFusion</title>
+    <title>StaffSync</title>
 </head>
 <body>
     <div class="container">
         <form id="loginForm" action="../action/login_action.php" method="post">
-            <h1>FitFusion</h1>
+            <h1>StaffSync</h1>
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter email" required

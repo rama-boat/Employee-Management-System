@@ -8,9 +8,6 @@ input {
     margin-bottom: 16px;
 }
 
-
-
-/* The message box is shown when the user clicks on the password field */
 #message {
     display: none;
     background: #f1f1f1;
@@ -25,7 +22,6 @@ input {
     font-size: 18px;
 }
 
-/* Add a green text color and a checkmark when the requirements are right */
 .valid {
     color: #1cbbb4;
 }
@@ -36,9 +32,9 @@ input {
     content: "✔";
 }
 
-/* Add a red text color and an "x" when the requirements are wrong */
+
 .invalid {
-    color: #1a2e35;
+    color: red;
 }
 
 .invalid:before {
@@ -47,7 +43,7 @@ input {
     content: "✖";
 }
 
-/* end */
+
 body {
     font-family: monospace;
     background-color: #1a2e35;
@@ -141,4 +137,70 @@ button:hover {
     button {
         width: 100%;
     }
+}
+
+
+body {
+    background-color: #1a2e35;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 8px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 50%;
+    /* Set the width of the container */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+input[type=tel],
+input[type=password],
+select,
+input[type=date] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.btn {
+    background-color: #1cbbb4;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.btn:hover {
+    background-color: #1a2e35;
+}
+
+hr {
+    border: 1px solid lightgrey;
+}
+
+h1 {
+    color: white;
 }

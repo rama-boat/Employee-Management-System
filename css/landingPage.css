@@ -1,5 +1,6 @@
 body {
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: monospace;
     color: #0c0c0c;
     background-color: #ffffff;
   }
@@ -248,13 +249,13 @@ body {
   
   
   
-  .slider_section .carousel_btn-container .carousel-control-prev {
+  /* .slider_section .carousel_btn-container .carousel-control-prev {
     background-image: url(../images/prev.png);
   }
   
   .slider_section .carousel_btn-container .carousel-control-next {
     background-image: url(../images/next.png);
-  }
+  } */
   
   
  
