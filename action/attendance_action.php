@@ -7,8 +7,8 @@ $h1=isLoggedIn();
 
 //collection of data
 if(isset($_POST["submit"])){
-    echo "hi";
     $clock_in = mysqli_real_escape_string( $con, $_POST["clockIn"]);
+    echo "hi";
     $clock_out = mysqli_real_escape_string( $con, $_POST["clockOut"]);
     $work_date = mysqli_real_escape_string( $con, $_POST["workingDate"]);
 
