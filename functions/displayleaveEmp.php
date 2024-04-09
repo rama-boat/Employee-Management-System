@@ -63,8 +63,8 @@
     //call the function created
     $records = getLeaveRequests();
    
-    print_r($records);
-    exit;
+    // print_r($records);
+    // exit;
 
 
 
