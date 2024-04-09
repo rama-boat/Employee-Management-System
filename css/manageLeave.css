@@ -103,9 +103,9 @@ a.btn:hover{
 }
 
 /* hide scrollbar element on screen */
-#Sidebar::--webkit-scrollbar {
+/* #Sidebar::--webkit-scrollbar {
 	display: none;
-}
+} */
 
 #Sidebar.hide {
 	width: 60px;
@@ -225,7 +225,7 @@ a.btn:hover{
 	position: relative;
 	width: calc(100% - 280px);
 	/* left: 280px; */
-    left: 220px;
+    left: 200px;
 	transition: .3s ease;
     
 }
