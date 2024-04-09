@@ -82,11 +82,11 @@ $h1 = isLoggedIn();
 
                     <div class="subBtn">
                         <input type="submit" name="submit" value="Submit">
-                        <a href="../view/updateview.php?empID=<?php echo $h1 ?>"><input type="button" name="update" value="Update"></a>
+                        <a href="../view/updateview.php?EmpID=<?php echo $h1 ?>"><input type="button" name="update" value="Update"></a>
                     </div>
             </div>
             </form>
-            </div>
+
 
             <!-- </div> -->
 
