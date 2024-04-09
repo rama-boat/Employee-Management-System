@@ -11,6 +11,8 @@ if(isset($_POST["submit"])){
     $clock_out = mysqli_real_escape_string( $con, $_POST["clockOut"]);
     $work_date = mysqli_real_escape_string( $con, $_POST["workingDate"]);
 
+    echo $h1 ."<br>". $clock_in ."<br>". $work_date ."<br>". $clock_out;
+    exit();
 
     //write a query
     $sql_query = "INSERT INTO attendancerecords (EID,WorkingDate,ClockInTime,ClockOutTime) VALUES ('$h1','$work_date','$clock_in','$clock_out')";
