@@ -16,25 +16,19 @@ if(isset($_POST["submit"])){
     $sql_query = "INSERT INTO attendancerecords (EID,WorkingDate,ClockInTime,ClockOutTime) VALUES ('$h1','$work_date','$clock_in','$clock_out')";
     
 
-    if(mysqli_query($con,$sql_query)) {
-        echo "Attendance Recorded successfully!";
-        header("Location:../view/empAttendance.php");
-    } else {
-        echo "Error: " ;
-    }
         
     // check if query worked
-    // if ($con->query($sql_query) === true) {
-    //     echo "Attendance Recorded successfully!";
-    //     header("Location:../view/empAttendance.php");
+    if ($con->query($sql_query) === true) {
+        echo "Attendance Recorded successfully!";
+        header("Location:../view/empAttendance.php");
 
-    // } else {
-    // //echo error 
-    //     echo "Error: " ;
-    // }
+    } else {
+    //echo error 
+        echo "Error: " ;
+    }
 
     //close database connection
-    $con->close();
+    // $con->close();
 
 }elseif(isset($_POST['update'])){
     $clock_out = mysqli_real_escape_string( $con, $_POST["clockOut"]);
