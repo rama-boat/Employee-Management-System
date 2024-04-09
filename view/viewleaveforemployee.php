@@ -75,8 +75,6 @@ $h1 = isLoggedIn();
             <?php
             include "../functions/displayLeaveEmp.php";
             ?>
-
-
         </main>
     </section>
 </body>
