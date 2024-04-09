@@ -19,12 +19,13 @@ if(isset($_POST["submit"])){
         
     // check if query worked
     if ($con->query($sql_query) === true) {
+        var dump();
         echo "Attendance Recorded successfully!";
         header("Location:../view/empAttendance.php");
 
     } else {
     //echo error 
-        echo "Error: " ;
+        echo "Error: " .$con->error;
     }
 
     //close database connection
