@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <form id="loginForm" action="../action/login_action.php" method="post">
-            <h1>StaffSync</h1>
+            <h1>Welcome to StaffSync</h1>
             <div class="form-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="Enter email" required

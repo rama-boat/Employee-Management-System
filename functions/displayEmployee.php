@@ -22,15 +22,18 @@
     }
 
     .styled-table thead th {
-        padding: 10px;
+        padding: 8px;
         background-color: #1a2e35;
-        text-align: left;
+        text-align: center;
         border-bottom: 1px solid #ddd;
         color: white;
+        
+        /* padding-right: 8px; */
+      
     }
 
     .styled-table tbody td {
-        padding: 8px;
+        padding: 7px;
         border-bottom: 1px solid #ddd;
     }
 
@@ -43,7 +46,7 @@
     } */
 
     .styled-table tbody td:last-child {
-        text-align: center;
+        text-align: right;
     }
 
     a {

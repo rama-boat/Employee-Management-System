@@ -11,6 +11,13 @@ if (isset($_POST["submit"])) {
     $e_mail = mysqli_real_escape_string($con, $_POST["email"]);
     $e_pass = mysqli_real_escape_string($con, $_POST["password"]);
 
+
+    // Php Validation
+    if (!filter_var($e_mail, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format";
+        exit();
+    }
+
     // Query to select a record
     $sql = "SELECT EmpID,RoleID,Password FROM employee WHERE Email ='$e_mail'";
 
@@ -35,12 +42,13 @@ if (isset($_POST["submit"])) {
             header("Location:../view/dashboard.php");
             exit();
         } else {
-            
             echo "Incorrect username or password";
+            header("Location:../login/login.php");
         }
     } else {
-        
         echo "Incorrect username or password";
+        header("Location:../login/login.php");
+        
     }
 } else {
     
