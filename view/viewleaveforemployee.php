@@ -1,4 +1,8 @@
 <?php
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
 include_once "../settings/core.php";
 isLoggedIn();
 $h1 = isLoggedIn();
@@ -73,10 +77,8 @@ $h1 = isLoggedIn();
         <main>
             <h1>View Leave Status</h1>
             <?php
-            include_once "../functions/displayLeaveEmp.php";
+            include_once "../functions/displayleaveEmp.php";
             ?>
-
-
         </main>
     </section>
 </body>
