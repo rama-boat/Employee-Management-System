@@ -73,7 +73,7 @@ $h1 = isLoggedIn();
         <main>
             <h1>View Leave Status</h1>
             <?php
-            include "../functions/displayLeaveEmp.php";
+            include "../functions/displayleaveEmp.php";
             ?>
         </main>
     </section>
