@@ -17,7 +17,7 @@ if(isset($_POST["submit"])){
 
     // check if query worked
     if ($con->query($sql_query) === true) {
-        echo "hi";
+        echo "hello";
         echo "Attendance Recorded successfully!";
         header("Location:../view/empAttendance.php");
 
