@@ -39,6 +39,7 @@ $user_role= getUserRoleId();
             echo '<h1>Welcome to the Employee Dashboard</h1>
             <ul class="list-group mt-3">
                 <li class="list-group-item"><a href="../view/empApplyLeave.php">Leave Requests</a></li>
+                <li class="list-group-item"><a href="../view/viewleaveforemployee.php">Leave Status</a></li>
                 <li class="list-group-item"><a href="../view/empAttendance.php">Attendance</a></li>
                 <li class="list-group-item"><a href="../login/login.php">Logout</a></li>
             </ul>';

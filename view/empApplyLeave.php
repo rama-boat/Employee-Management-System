@@ -42,7 +42,7 @@ $h1 = isLoggedIn();
                 </a>
             </li>
             <li>
-                <a href="../view/viewleaveforemployee.php">
+                <a href=" view/viewleaveforemployee.php">
                     <i class='bx bx-calendar-check'></i>
                     <span class="text">View Leave Status</span>
                 </a>
