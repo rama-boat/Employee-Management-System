@@ -8,12 +8,13 @@ $h1=isLoggedIn();
 //collection of data
 if(isset($_POST["submit"])){
     $clock_in = mysqli_real_escape_string( $con, $_POST["clockIn"]);
-    echo "hi";
     $clock_out = mysqli_real_escape_string( $con, $_POST["clockOut"]);
     $work_date = mysqli_real_escape_string( $con, $_POST["workingDate"]);
 
 
     //write a query
+    echo "hi";
+
     $sql_query = "INSERT INTO attendancerecords (EID,WorkingDate,ClockInTime,ClockOutTime) VALUES ('$h1','$work_date','$clock_in','$clock_out')";
 
     // check if query worked
