@@ -14,10 +14,9 @@ if(isset($_POST["submit"])){
 
     //write a query
     $sql_query = "INSERT INTO attendancerecords (EID,WorkingDate,ClockInTime,ClockOutTime) VALUES ('$h1','$work_date','$clock_in','$clock_out')";
-
+    echo 'hello';
     // check if query worked
     if ($con->query($sql_query) === true) {
-        echo "hello";
         echo "Attendance Recorded successfully!";
         header("Location:../view/empAttendance.php");
 
