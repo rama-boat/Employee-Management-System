@@ -15,8 +15,8 @@ if(isset($_POST["submit"])){
     //write a query
     $sql_query = "INSERT INTO attendancerecords (EID,WorkingDate,ClockInTime,ClockOutTime) VALUES ('$h1','$work_date','$clock_in','$clock_out')";
     
-    // var_dump($sql_query);
-    // exit();
+    var_dump($sql_query);
+    exit();
 
         
     // check if query worked
