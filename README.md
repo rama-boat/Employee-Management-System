@@ -26,6 +26,7 @@ To access the admin dashboard, use the following credentials:
 1. Navigate to the login page.
 2. Enter the admin username and password.
 3. Once logged in, you will have access to the admin dashboard.
+4. you can signup normally if you want to be a regular employee.
 
 ## Contributing
 
