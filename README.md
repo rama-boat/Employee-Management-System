@@ -21,12 +21,6 @@ To access the admin dashboard, use the following credentials:
 - **Username:** delali.segbor@ashesi.edu.gh
 - **Password:** Dela_1421
 
-## Installation
-
-1. Clone the repository: `git clone https://github.com/your-repo.git`
-2. Install dependencies: `npm install`
-3. Start the application: `npm start`
-
 ## Usage
 
 1. Navigate to the login page.
