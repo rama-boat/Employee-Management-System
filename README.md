@@ -1,7 +1,3 @@
-Here's a template for your README file for the employee management system, including the key details for admin login:
-
----
-
 # Employee Management System
 
 ## Overview
@@ -11,8 +7,8 @@ The Employee Management System is a web-based application designed to streamline
 ## Features
 
 - **Leave Management:** Allows employees to request leaves and managers to approve or reject them.
-- **Attendance Tracking:** Tracks employee attendance and generates reports.
-- **Employee Information Management:** Stores and manages employee information, including personal details, contact information, and job history.
+- **Attendance Tracking:** Tracks employee attendance.
+- **Employee Information Management:** Stores and manages employee information, including personal details, contact information, etc.
 
 ## Getting Started
 
@@ -25,8 +21,8 @@ To access the admin dashboard, use the following credentials:
 
 1. Navigate to the login page.
 2. Enter the admin username and password.
-3. Once logged in, you will have access to the admin dashboard.
-4. you can signup normally if you want to be a regular employee.
+3. Once logged in, you can access the admin dashboard.
+4. you can sign up generally to be a regular employee.
 
 ## Contributing
 
