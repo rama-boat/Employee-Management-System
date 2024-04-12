@@ -12,11 +12,11 @@ if (isset($_POST["submit"])) {
     $e_pass = mysqli_real_escape_string($con, $_POST["password"]);
 
 
-    // Php Validation
-    if (!filter_var($e_mail, FILTER_VALIDATE_EMAIL)) {
-        echo "Invalid email format";
-        exit();
-    }
+    // // Php Validation
+    // if (!filter_var($e_mail, FILTER_VALIDATE_EMAIL)) {
+    //     echo "Invalid email format";
+    //     exit();
+    // }
 
     // Query to select a record
     $sql = "SELECT EmpID,RoleID,Password FROM employee WHERE Email ='$e_mail'";
